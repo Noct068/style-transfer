@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <script src="tfjs%40latest.js"></script>
+	<script src="tfjs-vis.js"></script>
+        <script lang = "js"></script>
+  </head>
+
+
+
+
+<body>
+    <div style="text-align: center;">
+        <h1 class="display-4 page-name">Psyche Art</h1>
+    </div>
+    <p class="quote"><i>Art is not what you see, but what you make others see.</i></p>
+	<div class="section-1">
+        <div class="row">
+            <div class="col D-flex text-center">
+                <img id="content-img" src="images/chicago.jpg" class="centered contentImg" height=256>
+              <br>
+              <br>
+              <input type="file" accept="image/jpg" name="image" id="file-content" style="display: none;">
+               <label type="button" class="btn btn-primary" for="file-content" style="cursor: pointer;">Uplaod Content Image</label>
+            </div>
+            <div class="col D-flex text-center">
+                <img id="style-img" class="centered styleImg" crossorigin="anonymous" src="images/seaport.jpg" height=256>
+              <br>
+              <br>
+                <div class="row">
+                    <div class="col">
+                    <input type="file" accept="image/jpg" name="image" id="file-style" style="display: none;">
+                        <label type="button" class="btn btn-primary" for="file-style" style="cursor: pointer; margin-left: 3rem">Uplaod Style Image</label></div>
+                    <div class="col">
+              <select id="style-select" class="centered custom-select selector" style="margin-right: 3rem;">
+                <option value="" disabled>Select a style</option>
+                <option value="seaport" selected="selected">seaport</option>
+                <option  value="udnie">udnie</option>
+                <option value="mermaid">mermaid</option>
+                <option value="wave">Wave</option>
+                <option value="seated-nude">Seated Nude</option>
+                <option value="starry-night">Starry Night</option>
+                <option value="bamboo-forest">Bamboo Forest</option>
+              </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col D-flex"></div>
+            <div class=" D-flex text-center">
+                
+            <canvas id="stylized" ></canvas>
+            <br>
+                <label for="stylized-img-ratio" style="color: white; font-size: 20px"><b class="strength">Strength</b></label>
+          
+                <div class="row">
+                    <div class="col">
+                        <input type="range" min="0" max="100" value="50" class="custom-range centered" id="stylized-img-ratio">
+                        <button disabled id="style-button" type="button" class="btn btn-primary btn-block">Loading, Please wait..</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col D-flex"></div>
+        </div>
+    </div>
+    <footer class="footer bg-light">
+        <div class="container-fluid">
+            <p class="instruct">Don't change strength too much for getting better image default strength is good. Enjoy the Art!<br>Model used may not perform good on some designs because of varying image sizes.</p>
+            
+            <div class="row">
+                <div class="col-sm-12 col-lg-3"></div>
+                <div class="col text-center">
+                    <a class="git-reference" href="https://github.com/NikhilR068"><i class="fa fa-github fa-2x" aria-hidden="true"></i> NikhilR068</a>
+                </div>
+                <div class="col text-center">
+                    <a class="linkedin-reference" href="https://www.linkedin.com/in/lakshya-vardhan-singh-rathore-b3a74119a"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i> Lakshya</a>
+                </div>
+                <div class="col-sm-12 col-lg-3"></div>
+            </div>
+        </div>
+    </footer>
+
+	<script src="script.js" type="module"></script>
+	 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+        
+</body>
+</html>

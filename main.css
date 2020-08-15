@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Ruthfully'; 
+			 src: url('fonts/Ruthfully.ttf');
+}
+h1.display-4.page-name{
+    font-family: 'Ruthfully';
+    color: white;
+    font-size: 130px;
+    text-shadow: 2px 2px #000000;
+}
+p.quote{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+}
+body{
+    background-image: url(images/pexels-ann-h-3095769.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-1 {
+    
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+.centered.contentImg{
+    border: 2px solid;
+}
+.centered.styleImg{
+    border: 2px solid;
+}
+label.btn.btn-primary{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#style-button.btn.btn-primary.btn-block{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+    padding: 1rem;
+}
+b.strength{
+    text-shadow: 2px 2px #000000;
+}
+
+p.instruct{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    
+}
+
+.fa.fa-github.fa-2x {
+    color: black;
+}
+.fa.fa-linkedin.fa-2x {
+    color: black;
+}
+a.git-reference{
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    font-size: 20px;
+    color: black;
+}
+a.git-reference:hover{
+    color: black;
+}
+a.linkedin-reference {
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    font-size: 20px;
+    color: black;
+}
+a.linkedin-reference:hover{
+    color: black;
+}
+#style-select.centered.custom-select.selector {
+    max-width: 50%;
+}
