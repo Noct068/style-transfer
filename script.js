@@ -12,7 +12,7 @@ class Main {
       })
       .finally(() => this.enableStylize());
     // load transformer
-    console.log("running ....");
+
     this.styleButton.disabled = true;
     this.loadTransformer()
       .then(model => {
